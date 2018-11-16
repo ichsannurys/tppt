@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+class RecordType1
+{
+	// var column1;
+	constructor (operand1)
+	{
+		this.column1 = operand1;
+	}
+
+	write_it(/*this*/)
+	{
+		console.log (this.column1);
+	}
+}
+
+class RecordType2 extends RecordType1
+{
+    constructor (operand1, operand2)
+    {
+    	super (operand1);
+    	this.column2 = operand2;
+    }
+}
+// void main()
+// {
+	RecordObject1 = new RecordType1 (1);
+	RecordObject2 = new RecordType2 (2, -1);
+
+	RecordObject1.write_it();
+	RecordObject2.write_it();
+// }
+
+console.log("Success");
+</script>
+</body>
+</html>
